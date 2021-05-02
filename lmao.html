@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script>
-      function rickroll(){
-        window.open("https://www.youtube.com/watch?v=xvFZjo5PgG0")
+    <style>
+            z-index: 3;
+      border: 2px solid;
+      transition: all 1s ease-in-out;
+      border-image: linear-gradient(#360154, #d442d5) 30;
+      span {
+        text-align: center;
+        font-family: "Sacramento", cursive;
+        left: 56px;
+        font-size: 35px;
+        line-height: 70px;
+        margin: 0 auto;
+        transition: all 0.3s ease-in-out;
+        background: -webkit-linear-gradient(#ffdc2a, #fb2182);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
-    </script>
+    }
+  }
+}
+    </style>
   </head>
   <body>
-    <div>
-      <h1 onclick="rickroll();">Click me!</h1>
+    <div class="container">
+      <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+        <div class="button">
+          <span>Sun</span>
+        </div>
+        <div class="sun"></div>
+      </a>
     </div>
   </body>
 </html>
